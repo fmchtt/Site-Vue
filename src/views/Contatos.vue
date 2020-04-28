@@ -56,11 +56,53 @@ export default {
 </script>
 
 <style>
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) {
+  .contato-item {
+    width: 455px;
+    margin-top: 30px;
+  }
+
+  .contato-item > h2 {
+   font-size: 20px;
+  }
+
+  .contato-item > p {
+    font-size: 16px;
+  }
+
+  .contato-item > form {
+    width: 100%;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) {
+  .contato-item {
+    width: 500px;
+  }
+}
+@media (min-width:1281px) {
+  .contato-item {
+    width: 700px;
+  }
+
+  .contato-item > h2 {
+   font-size: 20px;
+  }
+
+  .contato-item > p {
+    font-size: 16px;
+  }
+
+  .contato-item > form {
+    width: 100%;
+  }
+}
 
 .contato-item {
   display: inline-block;
   vertical-align: top;
-  width: 45%;
   border-left: 3px solid rgba(255, 255, 255, 0.5);
   padding-left: 10px;
 }

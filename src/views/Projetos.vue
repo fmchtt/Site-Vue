@@ -51,6 +51,21 @@ export default {
 </script>
 
 <style>
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) {
+  .items {
+    width: 445px;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) {
+  .items {
+    width: 458px;
+  }
+}
+
 #projetos {
   color: white;
   margin-left: 20px;
@@ -60,7 +75,6 @@ export default {
   border-left: 3px solid rgba(255, 255, 255, 0.5);
   padding-left: 10px; 
   display: inline-block;
-  width: 49%;
   margin-bottom: 40px;
 }
 

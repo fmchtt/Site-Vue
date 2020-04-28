@@ -44,6 +44,35 @@ export default {
 </script>
 
 <style>
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) {
+  .demo {
+    width: 430px;
+    height: 400px;
+  }
+
+  .demo > img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .demo > h1 {
+    font-size: 24px;
+  }
+
+  .demo > p {
+    font-size: 18px;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) {
+  .demo {
+    width: 450px;
+  }
+}
+
 #apresentacao {
   color: white;
   padding: 0 20px;
@@ -55,8 +84,6 @@ export default {
   text-align: center;
   border-radius: 15px;
   display: inline-block;
-  width: 48%;
-  height: 58vh;
   margin-left: 20px;
   margin-bottom: 40px;
   vertical-align: top;
@@ -68,8 +95,6 @@ export default {
 
 .demo > img {
     margin-left: 30px;
-    width: 18vw;
-    height: 20vh;
 }
 
 .demo > h1, p {

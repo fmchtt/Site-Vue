@@ -30,31 +30,65 @@ export default {
 </script>
 
 <style>
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) {
+  li {
+    width: 100px;
+  }
+
+  #logo {
+    width: 250px;
+  }
+
+  li > p {
+    margin-top: 30px;
+  }
+
+  header > ul {
+    height: 77px;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+  li {
+    width: 200px;
+  }
+
+  #logo {
+    width: 350px;
+  }
+
+  li > p {
+    margin-top: 40px;
+  }
+
+  header > ul {
+    height: 108px;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap");
 ul > a {
   color: white;
   text-align: center;
   text-decoration: none;
-  height: 150px;
   margin: 100px 0;
 }
 
 li {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  height: 100%;
 }
-
 li > p {
   padding: 0;
-  margin-top: 45%;
   margin-left: 0;
   font-weight: bold;
 }
 
 header > ul {
   display: inline-block;
-  height: 150px;
   vertical-align: top;
   margin: 0;
 }
@@ -70,8 +104,6 @@ header {
 }
 
 #logo {
-  width: 450px;
-  height: 150px;
   display: inline-block;
 }
 </style>
